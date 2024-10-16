@@ -76,6 +76,7 @@ export const myProjects = [
     subdesc:
       'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, GSAP and Prismic, drei, Three.js, React.js and React-three-fiber.',
     href: 'https://fizzi-3d-soda.netlify.app/',
+    gitref: 'https://github.com/asmashaik040/fizzi-drink',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
@@ -113,6 +114,7 @@ export const myProjects = [
     subdesc:
       'With a focus on efficiency, CarePulse integrantes complex forms by using Next.js, Tailwind CSS, TypeScript, React.js and shadCN that enhance operational workflows.',
     href: 'https://health-carepulse.netlify.app/',
+    gitref: 'https://github.com/asmashaik040/health-care',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
@@ -152,6 +154,7 @@ export const myProjects = [
     subdesc:
       'Built with React.js, Vite, Tailwind CSS and JavaScript ensures a smooth and dining experience, tailored to meet the needs of modern consumers.',
     href: 'https://muskaan-dining.netlify.app',
+    gitref: 'https://github.com/asmashaik040/Restaurant-app',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
@@ -189,6 +192,7 @@ export const myProjects = [
     subdesc:
       'Built with React.js, Vite, Tailwind CSS and JavaScript that exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.',
     href: 'https://aurora-saas.netlify.app',
+    gitref: 'https://github.com/asmashaik040/aurora_saas',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
     logoStyle: {
@@ -226,6 +230,7 @@ export const myProjects = [
     subdesc:
       'With ReactJobs, users can experience the future of collaboration, where multiple employers can post job opportunities to work together, by using React.js and Tailwind CSS latest features.',
     href: 'https://jobs-portal-reactjs.netlify.app/',
+    gitref: 'https://github.com/asmashaik040/react-jobs',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
