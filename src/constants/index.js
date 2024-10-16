@@ -20,12 +20,12 @@ export const navLinks = [
     href: '#experience',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Recognitions',
     href: '#recognitions',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Contact',
     href: '#contact',
   },
@@ -34,8 +34,8 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Kalyani Anumalla',
-    position: 'Project Manager at ThoughtFocus',
+    name: 'Star Performer',
+    position: 'ThoughtFocus',
     source: '/assets/TF_Star_performer.jpg',
     img: 'assets/tf.png',
     review:
@@ -43,8 +43,8 @@ export const clientReviews = [
   },
   {
     id: 2,
-    name: 'Ranjani K',
-    position: 'Project Manager at TCS',
+    name: 'Star Performer',
+    position: 'TCS',
     source: '/assets/TCS_Star_performer.jpg',
     img: 'assets/tcs.png',
     review:
@@ -52,8 +52,8 @@ export const clientReviews = [
   },
   {
     id: 3,
-    name: 'Lokesh M',
-    position: 'Technical Lead at TCS ',
+    name: 'Best Team',
+    position: 'TCS ',
     source: '/assets/TCS_Best_Team.jpg',
     img: 'assets/tcs.png',
     review:

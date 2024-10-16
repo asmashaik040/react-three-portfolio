@@ -1,31 +1,151 @@
-import { useState } from 'react';
-import Globe from 'react-globe.gl';
-
-import Button from '../components/Button.jsx';
+import {
+  FaReact,
+  FaBootstrap,
+  FaHtml5,
+  FaGitAlt,
+  FaGithub,
+  FaNpm,
+} from "react-icons/fa";
+import {
+  SiJquery,
+  SiPostman,
+  SiTypescript,
+  SiJavascript,
+  SiThreedotjs,
+  SiNextdotjs,
+} from "react-icons/si";
+import { IoLogoCss3 } from "react-icons/io";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 
 const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
+  const techStack = [
+    {
+      id: 1,
+      name: "React.js",
+      path: <FaReact className="w-full h-full text-teal-400" />,
+    },
+    {
+      id: 2,
+      name: "jQuery",
+      path: <SiJquery className="w-full h-full text-blue-500" />,
+    },
+    {
+      id: 3,
+      name: "Three.js",
+      path: <SiThreedotjs className="w-full h-full text-white" />,
+    },
+    {
+      id: 4,
+      name: "Next JS",
+      path: (
+        <SiNextdotjs className="w-full h-full text-black bg-white rounded-full" />
+      ),
+    },
+  ];
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('asmashaik040@gmail.com');
-    setHasCopied(true);
+  const languages = [
+    {
+      id: 1,
+      name: "HTML",
+      path: <FaHtml5 className="w-full h-full text-orange-500" />,
+    },
+    {
+      id: 2,
+      name: "CSS",
+      path: <IoLogoCss3 className="w-full h-full text-blue-500" />,
+    },
+    {
+      id: 3,
+      name: "Bootstrap",
+      path: (
+        <FaBootstrap className="w-full h-full text-white bg-purple-500 rounded-md" />
+      ),
+    },
+    {
+      id: 4,
+      name: "JavaScript",
+      path: <SiJavascript className="w-full h-full text-yellow-400" />,
+    },
+    {
+      id: 5,
+      name: "TypeScript",
+      path: (
+        <SiTypescript className="w-full h-full text-blue-500 rounded-md bg-white" />
+      ),
+    },
+    {
+      id: 6,
+      name: "TailwindCSS",
+      path: <RiTailwindCssFill className="w-full h-full text-blue-400" />,
+    },
+  ];
 
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
+  const tools = [
+    {
+      id: 1,
+      name: "Vite",
+      path: <img src="/vite.svg" alt="vite" />,
+    },
+    {
+      id: 2,
+      name: "Git",
+      path: <FaGitAlt className="w-full h-full text-red-500" />,
+    },
+    {
+      id: 3,
+      name: "GitHub",
+      path: <FaGithub className="w-full h-full text-white" />,
+    },
+    {
+      id: 4,
+      name: "VSCode",
+      path: <VscVscode className="w-full h-full text-blue-500" />,
+    },
+    {
+      id: 5,
+      name: "Postman",
+      path: (
+        <SiPostman className="w-full h-full text-orange-500 rounded-full bg-white" />
+      ),
+    },
+    {
+      id: 6,
+      name: "NPM",
+      path: <FaNpm className="w-full h-full text-red-500" />,
+    },
+  ];
 
   return (
-    <section className="c-space my-20" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+    <section className="c-space pt-20" id="about">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/girl-2.jpg" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img
+              src="assets/girl-2.jpg"
+              alt="grid-1"
+              className="w-full sm:h-[276px] h-fit object-contain"
+            />
 
             <div>
               <p className="grid-headtext">Hi, I’m Asma Shaik</p>
               <p className="grid-subtext">
-                Senior Front-End Developer with 5 years of experience, I skilled in both frontend and backend dev, creating dynamic and responsive websites.
+                Senior Front-End Developer with 5 years of experience, I have
+                worked in both frontend and backend dev, creating dynamic and
+                responsive websites.
+              </p>
+              <p className="grid-subtext mt-4">
+                My expertise lies in leveraging ReactJS, along with JavaScript
+                and CSS to build modern and responsive web applications. I have
+                experience in developing reusable and scalable components,
+                implementing state management, and integrating with backend
+                APIs.
+              </p>
+              <p className="grid-subtext mt-4">
+                As an enthusiastic learner, I enjoy exploring new technologies,
+                and enhancing my skills. I'm a quick learner and collaborate
+                with team & clients to solve complex challenges & create
+                exceptional user experiences.
               </p>
             </div>
           </div>
@@ -33,67 +153,41 @@ const About = () => {
 
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="assets/techstack-1.jpg" alt="grid-2" className="w-full sm:h-[276px] h-fit object-contain" />
+            <img
+              src="assets/techstack-1.jpg"
+              alt="grid-2"
+              className="w-full sm:h-[276px] h-fit object-contain"
+            />
 
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in JavaScript with a focus on React and a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.
+                I specialize in JavaScript with a focus on frameworks like
+                React.js, Next.js, and Three.js and below tools & languages.
               </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{ lat: 15, lng: 78, text: 'Kadapa, India', color: 'red', size: 15 }]}
-              />
-            </div>
-            <div>
-              <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-              <p className="grid-subtext">I&apos;m based in Kadapa, India and open to remote work worldwide. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. 
-              Let's work together to bring your ideas to life!</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container">
-            <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
-
-            <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code. I enjoy exploring new technologies, and enhancing my skills. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. 
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
-            <img
-              src="assets/grid4.png"
-              alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">asmashaik040@gmail.com</p>
+              <div className="flex flex-col justify-between flex-wrap gap-5 mt-4">
+                <div className="flex items-center gap-3">
+                  {techStack.map((tag, index) => (
+                    <div key={index} className="tech-logo">
+                      {tag.path}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-3">
+                  {languages.map((tag, index) => (
+                    <div key={index} className="tech-logo">
+                      {tag.path}
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-3">
+                  {tools.map((tag, index) => (
+                    <div key={index} className="tech-logo">
+                      {tag.path}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
